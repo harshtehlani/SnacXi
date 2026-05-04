@@ -178,9 +178,9 @@
             list.innerHTML += `<div class="bill-row"><span>${p.name} x ${cart[id]}</span><span>₹${p.price * cart[id]}</span></div>`;
         }
 
-        const gst = Math.round(itemTotal * 0.05);
-        const delFee = itemTotal > 0 ? 25 : 0;
-        const handFee = itemTotal > 0 ? 5 : 0;
+        const gst = Math.round(itemTotal * 0.0);
+        const delFee = itemTotal > 0 ? 9 : 0;
+        const handFee = itemTotal > 0 ? 4 : 0;
         const grandTotal = itemTotal > 0 ? (itemTotal + delFee + handFee + gst) : 0;
 
         document.getElementById('cart-count').innerText = count;
